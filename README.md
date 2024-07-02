@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# Limoverse Version 2
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+### Limo token
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+Network : BSC
+Token Address : 0x37E2ae82C454A6888E4bbb3e21a6607034832b4f
+Explorer link : [bscscan.com](https://bscscan.com/token/0x37E2ae82C454A6888E4bbb3e21a6607034832b4f)

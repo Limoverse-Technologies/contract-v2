@@ -1,12 +1,21 @@
 require('@nomicfoundation/hardhat-toolbox')
+require('dotenv').config()
 
-/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: '0.8.24',
   networks: {
     bsc: {
       url: `https://bsc-dataseed.binance.org/`,
-      accounts: [BSC_PRIVATE_KEY]
+      accounts: [process.env.PRIVATE_KEY_BSC]
+    },
+    bsctestet: {
+      url: `https://data-seed-prebsc-1-s1.binance.org:8545/`,
+      accounts: [process.env.PRIVATE_KEY_TESTNET]
+    }
+  },
+  etherscan: {
+    apiKey: {
+      bsc: process.env.BSCSCAN
     }
   }
 }
